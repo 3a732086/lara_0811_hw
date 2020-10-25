@@ -21,8 +21,10 @@
     </style>
 </head>
 <body class="antialiased">
-<a href="{{route('home.index')}}">首頁</a>
-<a href="{{route('news.index')}}">最新消息</a>
+
+<button onclick="window.location='{{ URL::route('home.index')}}'">首頁</button>
+<button onclick="window.location='{{ URL::route('news.index')}}'">最新消息</button>
+
 <div class="relative flex items-top justify-center min-h-screen bg-gray-100 dark:bg-gray-900 sm:items-center sm:pt-0">
     @if (Route::has('login'))
         <div class="hidden fixed top-0 right-0 px-6 py-4 sm:block">
